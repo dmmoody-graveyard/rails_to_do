@@ -1,6 +1,6 @@
 <% content_for(:title, "List | To Do") %>
 
-<h1><%= @list.name %></h1>
+<h1><%= @list.name %> | <small><%= link_to "Edit list", edit_list_path(@list) %></small></h1>
 
 <h4><%= @list.description %></h4>
 
